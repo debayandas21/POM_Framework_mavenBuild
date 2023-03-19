@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: Automation.POM.Test.TC01_Launch_Application_Test
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.388 sec <<< FAILURE!
+Launch_Application(Automation.POM.Test.TC01_Launch_Application_Test)  Time elapsed: 6.49 sec  <<< FAILURE!
+java.lang.ExceptionInInitializerError
+	at Automation.POM.PageObjects.Application_LandIngPage.launchApllication(Application_LandIngPage.java:41)
+	at Automation.POM.Test.TC01_Launch_Application_Test.Launch_Application(TC01_Launch_Application_Test.java:42)
+Caused by: java.lang.NumberFormatException: Cannot parse null string
+	at java.base/java.lang.Long.parseLong(Long.java:671)
+	at java.base/java.lang.Long.parseLong(Long.java:831)
+	at Automation.framework.Utilities.ConfigUtil.<clinit>(ConfigUtil.java:15)
+	... 35 more
+

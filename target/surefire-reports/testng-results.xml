@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-19T21:49:41 IST" name="Automation.POM.Test.TC01_Launch_Application_Test" finished-at="2023-03-19T21:49:49 IST" duration-ms="7802">
+  <suite started-at="2023-03-20T00:18:19 IST" name="Automation.POM.Test.TC01_Launch_Application_Test" finished-at="2023-03-20T00:18:31 IST" duration-ms="12678">
     <groups>
     </groups>
-    <test started-at="2023-03-19T21:49:41 IST" name="Command line test" finished-at="2023-03-19T21:49:49 IST" duration-ms="7802">
+    <test started-at="2023-03-20T00:18:19 IST" name="Command line test" finished-at="2023-03-20T00:18:31 IST" duration-ms="12678">
       <class name="Automation.POM.Test.TC01_Launch_Application_Test">
-        <test-method is-config="true" signature="configureReportingStructure()[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_Test@7cbd9d24]" started-at="2023-03-19T21:49:41 IST" name="configureReportingStructure" finished-at="2023-03-19T21:49:41 IST" duration-ms="283" status="PASS">
+        <test-method is-config="true" signature="configureReportingStructure()[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_Test@5717c37]" started-at="2023-03-20T00:18:18 IST" name="configureReportingStructure" finished-at="2023-03-20T00:18:19 IST" duration-ms="392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureReportingStructure -->
-        <test-method is-config="true" signature="setUpConfig()[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_Test@7cbd9d24]" started-at="2023-03-19T21:49:41 IST" name="setUpConfig" finished-at="2023-03-19T21:49:42 IST" duration-ms="709" status="PASS">
+        <test-method is-config="true" signature="setUpConfig()[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_Test@5717c37]" started-at="2023-03-20T00:18:19 IST" name="setUpConfig" finished-at="2023-03-20T00:18:19 IST" duration-ms="842" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpConfig -->
-        <test-method signature="Launch_Application(java.util.Hashtable,org.testng.ITestContext)[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_Test@7cbd9d24]" started-at="2023-03-19T21:49:42 IST" name="Launch_Application" data-provider="testDataProvider" finished-at="2023-03-19T21:49:48 IST" duration-ms="6482" status="FAIL">
+        <test-method signature="Launch_Application(java.util.Hashtable,org.testng.ITestContext)[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_Test@5717c37]" started-at="2023-03-20T00:18:20 IST" name="Launch_Application" data-provider="testDataProvider" finished-at="2023-03-20T00:18:31 IST" duration-ms="11205" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,60 +24,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@12952aff]]>
+                <![CDATA[org.testng.TestRunner@662be9f7]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.ExceptionInInitializerError">
-            <full-stacktrace>
-              <![CDATA[java.lang.ExceptionInInitializerError
-at Automation.POM.PageObjects.Application_LandIngPage.launchApllication(Application_LandIngPage.java:41)
-at Automation.POM.Test.TC01_Launch_Application_Test.Launch_Application(TC01_Launch_Application_Test.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.lang.NumberFormatException: Cannot parse null string
-at java.base/java.lang.Long.parseLong(Long.java:671)
-at java.base/java.lang.Long.parseLong(Long.java:831)
-at Automation.framework.Utilities.ConfigUtil.<clinit>(ConfigUtil.java:15)
-... 35 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ExceptionInInitializerError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch_Application -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_Test@7cbd9d24]" started-at="2023-03-19T21:49:48 IST" name="generateReport" finished-at="2023-03-19T21:49:49 IST" duration-ms="437" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_Test@5717c37]" started-at="2023-03-20T00:18:31 IST" name="generateReport" finished-at="2023-03-20T00:18:31 IST" duration-ms="473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->

@@ -13,7 +13,7 @@
             <configuration>
                 <source>19</source>
                 <target>19</target>
-                <phase>test</phase>
+                
                 <phase>compile</phase> 
             </configuration>
         </plugin>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="Automation.POM.Test.TC01_Launch_Application_Test" time="11.205" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="Automation.POM.Test.TC01_Launch_Application_Test" time="38.233" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -27,7 +27,7 @@
     <property name="user.variant" value=""/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="os.name" value="Windows 11"/>
-    <property name="classworlds.conf" value="C:\Automation_WorkSpace\Pom_TestNG_framework\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6069703842614186549.tmp"/>
+    <property name="classworlds.conf" value="C:\Automation_WorkSpace\Pom_TestNG_framework\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf14354242373024844325.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Maven\apache-maven-3.8.7\bin;C:\Program Files\Git\cmd;C:\Users\debay\AppData\Local\Microsoft\WindowsApps;;."/>
@@ -44,7 +44,7 @@
     <property name="java.class.path" value="C:\Users\debay\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="19"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -59,8 +59,8 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="m2e.build.project.data.socket.port" value="64490"/>
+    <property name="m2e.build.project.data.socket.port" value="53111"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Automation.POM.Test.TC01_Launch_Application_Test" name="Launch_Application" time="11.205"/>
+  <testcase classname="Automation.POM.Test.TC01_Launch_Application_Test" name="Launch_Application" time="38.233"/>
 </testsuite>

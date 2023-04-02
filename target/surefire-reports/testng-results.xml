@@ -1,41 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-20T00:18:19 IST" name="Automation.POM.Test.TC01_Launch_Application_Test" finished-at="2023-03-20T00:18:31 IST" duration-ms="12678">
+  <suite started-at="2023-04-02T16:40:25 IST" name="Command line suite" finished-at="2023-04-02T16:40:59 IST" duration-ms="33732">
     <groups>
     </groups>
-    <test started-at="2023-03-20T00:18:19 IST" name="Command line test" finished-at="2023-03-20T00:18:31 IST" duration-ms="12678">
-      <class name="Automation.POM.Test.TC01_Launch_Application_Test">
-        <test-method is-config="true" signature="configureReportingStructure()[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_Test@5717c37]" started-at="2023-03-20T00:18:18 IST" name="configureReportingStructure" finished-at="2023-03-20T00:18:19 IST" duration-ms="392" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configureReportingStructure -->
-        <test-method is-config="true" signature="setUpConfig()[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_Test@5717c37]" started-at="2023-03-20T00:18:19 IST" name="setUpConfig" finished-at="2023-03-20T00:18:19 IST" duration-ms="842" status="PASS">
+    <test started-at="2023-04-02T16:40:25 IST" name="Command line test" finished-at="2023-04-02T16:40:59 IST" duration-ms="33732">
+      <class name="Automation.POM.Test.TC02_SignIn_Application_CaptureServices_Test">
+        <test-method is-config="true" signature="setUpConfig()[pri:0, instance:Automation.POM.Test.TC02_SignIn_Application_CaptureServices_Test@1b45c0e]" started-at="2023-04-02T16:40:26 IST" name="setUpConfig" finished-at="2023-04-02T16:40:26 IST" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpConfig -->
-        <test-method signature="Launch_Application(java.util.Hashtable,org.testng.ITestContext)[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_Test@5717c37]" started-at="2023-03-20T00:18:20 IST" name="Launch_Application" data-provider="testDataProvider" finished-at="2023-03-20T00:18:31 IST" duration-ms="11205" status="PASS">
+        <test-method signature="Launch_Application(java.util.Hashtable,org.testng.ITestContext)[pri:0, instance:Automation.POM.Test.TC02_SignIn_Application_CaptureServices_Test@1b45c0e]" started-at="2023-04-02T16:40:46 IST" name="Launch_Application" data-provider="testDataProvider" finished-at="2023-04-02T16:40:59 IST" duration-ms="13000" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{TestCase Name=TC01_Launch_Application_Test, Medium=Web, Execute=Y, Browser=Edge}]]>
+                <![CDATA[{Medium=Web, Phone=, Email=, Execute=Y, UserName=, Address=, Password=, TestCase Name=TC02_SignIn_Application_CaptureServices_Test, LastName=, City=, FirstName=, P-code=, State=, Country=, Browser=Edge, ConfirmPasswrd=}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@662be9f7]]>
+                <![CDATA[org.testng.TestRunner@41f964f9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch_Application -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_Test@5717c37]" started-at="2023-03-20T00:18:31 IST" name="generateReport" finished-at="2023-03-20T00:18:31 IST" duration-ms="473" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:Automation.POM.Test.TC02_SignIn_Application_CaptureServices_Test@1b45c0e]" started-at="2023-04-02T16:40:59 IST" name="generateReport" finished-at="2023-04-02T16:40:59 IST" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-      </class> <!-- Automation.POM.Test.TC01_Launch_Application_Test -->
+      </class> <!-- Automation.POM.Test.TC02_SignIn_Application_CaptureServices_Test -->
+      <class name="Automation.POM.Test.TC01_Launch_Application_SignUpUser_Test">
+        <test-method is-config="true" signature="configureReportingStructure()[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_SignUpUser_Test@5b7a8434]" started-at="2023-04-02T16:40:25 IST" name="configureReportingStructure" finished-at="2023-04-02T16:40:25 IST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureReportingStructure -->
+        <test-method is-config="true" signature="setUpConfig()[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_SignUpUser_Test@5b7a8434]" started-at="2023-04-02T16:40:25 IST" name="setUpConfig" finished-at="2023-04-02T16:40:26 IST" duration-ms="749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpConfig -->
+        <test-method signature="Launch_Application(java.util.Hashtable,org.testng.ITestContext)[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_SignUpUser_Test@5b7a8434]" started-at="2023-04-02T16:40:26 IST" name="Launch_Application" data-provider="testDataProvider" finished-at="2023-04-02T16:40:45 IST" duration-ms="19050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Medium=Web, Phone=14567788, Email=testUser@automation.com, Execute=Y, UserName=DemoUser1, Address=123-California, Password=VGVzdFVzZXJAMTIzNDU=, TestCase Name=TC01_Launch_Application_SignUpUser_Test, LastName=User, City=Sanramon, FirstName=Test, P-code=11111, State=California, Country=UNITED STATES, Browser=Edge, ConfirmPasswrd=VGVzdFVzZXJAMTIzNDU=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@41f964f9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch_Application -->
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:Automation.POM.Test.TC01_Launch_Application_SignUpUser_Test@5b7a8434]" started-at="2023-04-02T16:40:45 IST" name="generateReport" finished-at="2023-04-02T16:40:46 IST" duration-ms="497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- Automation.POM.Test.TC01_Launch_Application_SignUpUser_Test -->
     </test> <!-- Command line test -->
-  </suite> <!-- Automation.POM.Test.TC01_Launch_Application_Test -->
+  </suite> <!-- Command line suite -->
 </testng-results>

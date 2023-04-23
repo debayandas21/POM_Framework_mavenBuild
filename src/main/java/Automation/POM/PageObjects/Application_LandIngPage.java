@@ -21,15 +21,18 @@ import Automation.POM.framework.core.BaseClass;
 public class Application_LandIngPage extends BaseClass {
 	
 	action_keywrods actions;
-	JavascriptExecutor js=(JavascriptExecutor)driver;
+	
+	
 	
 	public Application_LandIngPage(WebDriver driver) {
-		Automation.POM.framework.core.BaseClass.driver = driver;
+		driver= BaseClass.driver;
 		actions= new action_keywrods();
 		PageFactory.initElements(driver, this);
+		
 
 	}
 
+	JavascriptExecutor js=(JavascriptExecutor)driver;
 	
 	@FindBy(xpath="//*[text()='REGISTER']")
 	WebElement RegisterLink; 
@@ -53,7 +56,7 @@ public class Application_LandIngPage extends BaseClass {
 	 */
 	public void launchApllication(ExtentTest report) throws Exception {
 		try {
-			driver.navigate().to(globalConfig.globalParameter.get("ApplicationUrl"));
+			driver.get(globalConfig.globalParameter.get("ApplicationUrl"));
 
 			System.out.println(globalConfig.globalParameter.get("ApplicationUrl"));
 

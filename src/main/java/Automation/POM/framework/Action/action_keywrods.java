@@ -48,7 +48,7 @@ public class action_keywrods extends BaseClass implements Elements {
 		if (driver != null) {
 			logger.info("driver is not null");
 			try {
-				Thread.sleep(Duration.ofSeconds(timeUnit));
+				Thread.sleep(timeUnit);
 				logger.info("wait for " + timeUnit + " seconds");
 				System.out.println("wait for " + timeUnit + " seconds");
 			} catch (Exception e) {

@@ -32,11 +32,12 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static Logger logger = LogManager.getLogger(BaseClass.class);
 	public static ExtentReports Extent;
-	//public static ExtentSparkReporter reporter;
 	public static action_keywrods actions= new action_keywrods();
 	public static ExtentTest report;
 
 	public static globalConfig globalParam;
+	
+	
 
 	public void initializeDriver(Hashtable<String, String> testData) throws Exception {
 
@@ -51,18 +52,19 @@ public class BaseClass {
 						opt.addArguments("start-maximized");
 						// opt.addArguments("user-data-dir=/path/to/your/custom/profile");
 						opt.addArguments("--no-sandbox");
-						// opt.addArguments("--disable-dev-shm-usage");
 						opt.addArguments("--disable-infobars");
 						opt.addArguments("--disable-extensions");
 						opt.addArguments("--disable-gpu");
+						opt.addArguments("--remote-allow-origins=*");
+						
 						driver = new EdgeDriver(opt);
 						driver.manage().deleteAllCookies();
 						driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-						logger.info("Chrome browser is launched successfully");
+						logger.info("Edge browser is launched successfully");
 						
 					} catch (Exception e) {
 						e.printStackTrace();
-						logger.error("Failed to load the Chromw Browser");
+						logger.error("Failed to load the Edge Browser");
 					}
 				}
 
@@ -76,13 +78,14 @@ public class BaseClass {
 						opt.setExperimentalOption("perfs", chromeperfs);
 
 						opt.addArguments("start-maximized");
-						// opt.addArguments("user-data-dir=/path/to/your/custom/profile");
+						opt.addArguments("user-data-dir=/path/to/your/custom/profile");
 						opt.addArguments("no-sandbox");
-						// opt.addArguments("--disable-dev-shm-usage");
+						opt.addArguments("--disable-dev-shm-usage");
 						opt.addArguments("--disable-infobars");
 						opt.addArguments("--disable-extensions");
 						opt.addArguments("--disable-gpu");
-
+						opt.addArguments("--remote-allow-origins=*");
+					
 						driver = new ChromeDriver(opt);
 						driver.manage().deleteAllCookies();
 						driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
@@ -110,7 +113,7 @@ public class BaseClass {
 	 * 
 	 * @throws Exception
 	 */
-	@SuppressWarnings("deprecation")
+	
 	public void initializeConfig() throws Exception {
 
 		try {
@@ -123,7 +126,6 @@ public class BaseClass {
 		} finally {
 			try {
 				Runtime.getRuntime().exec("taskkill /F /IM msedge.exe");
-				
 				Runtime.getRuntime().exec("taskkill /F /IM winword.exe");
 				Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe");
 
